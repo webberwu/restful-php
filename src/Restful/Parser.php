@@ -328,7 +328,7 @@ class Parser {
 
         if( is_array( $data ) )
         {
-            $query = urldecode( http_build_query( $data, '', '&' ) );
+            $query = http_build_query( $data, '', '&' );
             parse_str( $query, $output );
         }
         return $output;
