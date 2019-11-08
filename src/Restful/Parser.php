@@ -182,7 +182,7 @@ class Parser {
 
         if( is_array( $data ) )
         {
-            $_REQUEST = array_merge( $_GET, $this->_data( $data ) );
+            $_REQUEST = array_merge($_GET, $data);
             return true;
         }
         return false;
